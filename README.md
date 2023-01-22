@@ -1,6 +1,8 @@
 # Introduction
 This Python script parses folder(s) of Windows Sigma rules and converts them to Splunk Search Processing Language (SPL) and then buils a massive Splunk classic dashboard. The converion of all Sigma Windows rules generates over 2000 searches in the dashboard. The searches within the dashboard are designed to run one-at-a-time from top to bottom. 
 
+<img src="./Splunk_Dashboard_Image.png" height="500" />
+
 # How to use Script
 1. Download all the Sigma rules from https://github.com/SigmaHQ/sigma
 2. Edit the `Sigma_to_Splunk_dashboard.py` and change the `CONFIGURE ME` section to point to the location where the Windows Sigma rules are located
