@@ -18,6 +18,11 @@ This Python script parses folder(s) of Windows Sigma rules and converts them to 
 3. The optional field called `Added to all searches like: host=<value>` is where you can enter in the hostname of a computer which applies to all 2000+ queries. If no value is entered, it defaults to a `*` which means the search will run against all logs which have the `host` field present.
 4. After choosing the values, press the `Submit` button and watch as one query, top-to-bottom, completes after the previous one completes. 
   
+# Dashboard.xml Tested with:
+* Splunk Enterprise v9.0.3
+* Splunk Add-on for Sysmon (Splunk_TA_microsoft_sysmon) v3.0.0
+* Splunk Add-on for Microsoft Windows  (Splunk_TA_windows) v8.5.0
+
 # Requirements
 The following are needed for this Python script to run successfully:
 * Python 3.9
