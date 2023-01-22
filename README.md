@@ -7,7 +7,7 @@ This Python script parses folder(s) of Windows Sigma rules and converts them to 
 1. Download all the Sigma rules from https://github.com/SigmaHQ/sigma
 2. Edit the `Sigma_to_Splunk_dashboard.py` and change the `CONFIGURE ME` section to point to the location where the Windows Sigma rules are located
 3. If you want to specify an index or sourcetype for each search, change `prepend_splunk_search` within the `CONFIGURE ME` section
-4. Run the script. For example: $ python3.9 `Sigma_to_Splunk_dashboard.py`. Note that some rules will not convert and error reporting will write to stdout.
+4. Run the script. For example: `$ python3.9 Sigma_to_Splunk_dashboard.py`. Note that some rules will not convert and error reporting will write to stdout.
 6. Once the conversion is complete, the file `dashboard.xml` will be written to where you ran the script from
 7. Open `dashboard.xml` and copy the xml contents from it into a the source section of a new Splunk classic dashboard. 
 8. Save the Splunk dashboard and wait. Your browser may panic but allow it to continue and after a few minutes, the dashboard will render in the browser, and searches will start.
